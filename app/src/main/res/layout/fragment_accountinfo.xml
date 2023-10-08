@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/personwall"
+    tools:context=".AccountinfoFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <TextView
+        android:id="@+id/pincode"
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="@dimen/_28sdp"
+        android:layout_marginBottom="@dimen/_72sdp"
+        android:drawableStart="@drawable/pincode"
+        android:text=" Pincode - 756033"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/Adress"
+
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:drawableStart="@drawable/adress"
+        android:text=" Adr-AHR near SUIIT "
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintBottom_toTopOf="@+id/pincode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/state"
+
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:drawableStart="@drawable/adress"
+        android:text=" State - Odisha "
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintBottom_toTopOf="@+id/Adress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/emailTextView"
+        android:layout_width="@dimen/_195sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:text=" rajatsahu.tech@gmail.com"
+        android:textColor="@color/black"
+        android:layout_marginLeft="@dimen/_18sdp"
+        android:drawableStart="@drawable/email"
+        android:textSize="@dimen/_13sdp"
+        app:layout_constraintBottom_toTopOf="@+id/state"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:text=" Ph.no - 7008026899"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp"
+        android:drawableStart="@drawable/phone"
+        app:layout_constraintBottom_toTopOf="@+id/emailTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/personname"
+        android:layout_width="@dimen/_180sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:text=" Name - Sarabjeet Singh"
+        android:drawableStart="@drawable/person"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintBottom_toTopOf="@+id/phone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="@dimen/_210sdp"
+        android:layout_height="@dimen/_42sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:text="Account Info"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_28sdp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/personname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

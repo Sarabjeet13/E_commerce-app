@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/wall2"
+
+    android:layout_height="match_parent"
+    tools:context=".loginpage">
+
+    <EditText
+        android:id="@+id/user"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginStart="@dimen/_33sdp"
+        android:layout_marginTop="@dimen/_250sdp"
+        android:layout_marginEnd="@dimen/_40sdp"
+        android:backgroundTint="#0ADAF4"
+        android:ems="10"
+        android:hint=" Name"
+        android:drawableStart="@drawable/baseline_account_circle_24"
+        android:inputType="text"
+        android:textSize="@dimen/_13sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/gmaile"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginStart="@dimen/_33sdp"
+        android:layout_marginTop="@dimen/_300sdp"
+        android:layout_marginEnd="@dimen/_40sdp"
+        android:backgroundTint="#0ADAF4"
+        android:ems="10"
+        android:hint=" Email"
+        android:drawableStart="@drawable/baseline_email_24"
+        android:inputType="text"
+        android:textSize="@dimen/_13sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/passworde"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginStart="@dimen/_33sdp"
+        android:layout_marginTop="@dimen/_350sdp"
+        android:layout_marginEnd="@dimen/_40sdp"
+        android:backgroundTint="#0ADAF4"
+        android:drawableStart="@drawable/baseline_lock_open_24"
+        android:ems="10"
+        android:hint=" Password"
+        android:inputType="text"
+        android:textSize="@dimen/_13sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="@dimen/_165sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginStart="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_marginEnd="@dimen/_50sdp"
+        android:text="LOGIN"
+        android:textSize="@dimen/_20sdp"
+        android:textColor="@color/white"
+        android:background="@drawable/round_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passworde"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="@dimen/_214sdp"
+        android:layout_height="@dimen/_28sdp"
+        android:layout_marginStart="@dimen/_32sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:text=" New user ? Register now"
+        android:textColor="#0ADBF6"
+        android:textSize="@dimen/_18sdp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+
+    android:background="@drawable/wall1"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginStart="@dimen/_33sdp"
+        android:layout_marginEnd="@dimen/_40sdp"
+
+        android:backgroundTint="#0ADAF4"
+        android:drawableStart="@drawable/baseline_account_circle_24"
+        android:ems="10"
+        android:hint=" Name"
+        android:inputType="text"
+        android:textSize="@dimen/_13sdp"
+        app:layout_constraintBottom_toTopOf="@+id/email"
+        android:layout_marginBottom="@dimen/_15sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginStart="@dimen/_33sdp"
+
+        android:layout_marginEnd="@dimen/_40sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:backgroundTint="#0ADAF4"
+        android:drawableStart="@drawable/baseline_email_24"
+        android:ems="10"
+        android:hint=" Email"
+        android:inputType="text"
+        android:textSize="@dimen/_13sdp"
+        app:layout_constraintBottom_toTopOf="@+id/password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintVertical_bias="0.878" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginStart="@dimen/_33sdp"
+
+        android:layout_marginEnd="@dimen/_40sdp"
+        android:backgroundTint="#0ADAF4"
+        android:drawableStart="@drawable/baseline_lock_open_24"
+        android:ems="10"
+        android:hint=" Password"
+        android:inputType="text"
+        android:textSize="@dimen/_13sdp"
+        app:layout_constraintBottom_toTopOf="@+id/cpassword"
+        android:layout_marginBottom="@dimen/_15sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+
+        />
+
+    <EditText
+        android:id="@+id/cpassword"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_marginStart="@dimen/_33sdp"
+
+        android:layout_marginEnd="@dimen/_40sdp"
+        android:backgroundTint="#0ADAF4"
+        android:drawableStart="@drawable/baseline_password_24"
+        android:ems="10"
+        android:hint=" Confirm password"
+        android:inputType="text"
+        android:textSize="@dimen/_13sdp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        android:layout_marginBottom="@dimen/_15sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="@dimen/_165sdp"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginStart="@dimen/_50sdp"
+
+        android:layout_marginEnd="@dimen/_50sdp"
+        android:text="REGISTER"
+        android:textSize="@dimen/_20sdp"
+        android:textColor="@color/white"
+        android:background="@drawable/round_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/textView"
+        android:layout_marginBottom="@dimen/_18sdp"
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="@dimen/_214sdp"
+        android:layout_height="@dimen/_28sdp"
+        android:layout_marginStart="@dimen/_32sdp"
+        android:layout_marginBottom="@dimen/_72sdp"
+        android:layout_marginEnd="@dimen/_30sdp"
+        android:text="Alredady have an account"
+        android:textColor="#0ADBF6"
+        android:textSize="@dimen/_18sdp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
